@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"
 
 import {
   Home,
@@ -22,6 +23,7 @@ import "./globals.css";
 const App = () => {
   return (
     <main className="flex h-screen">
+      <Analytics/>
       <Routes>
         {/* public routes */}
         <Route element={<AuthLayout />}>
